@@ -4,11 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Open Sans";
-  font-display: swap;
-  font-weight: 400;
+
 }
 
 /* @font-face {
@@ -22,7 +18,11 @@
 body, html {
   color: #242424;
   background-color: #f3f3f3;
-  /* font-family: Arial, Helvetica, sans-serif; */
+    /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
+  font-family: Roboto, sans-serif;
+  /* font-display: swap; */
+  font-weight: 400;
   margin-top: 40px;
 }
 
@@ -39,6 +39,8 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
+/* LOGO  */
 
 .logo-container {
   width: 100%;
@@ -60,8 +62,21 @@ h1 {
 .task-list-main {
   width: 600px;
   min-height: 300px;
-  background-color: #b3b3b3;
+  background-color: #9ad1d1;
   padding: 25px;
   margin: 10px;
   border-radius: 26px;
+}
+
+/* Footer */
+
+.footer-container {
+  width: 100%;
+  height: 60px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px;
 }
