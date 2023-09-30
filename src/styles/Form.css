@@ -12,8 +12,8 @@
   font-size: 18px;
   background-color: #f3f3f3;
   padding: 14px 32px 14px 16px;
-  border-radius: 4px 0 0 4px;
-  border: 2px solid #3d9c75;
+  border-radius: 26px 0 0 26px;
+  border: 2.5px solid #3d9c75;
   outline: none;
 }
 
@@ -23,7 +23,7 @@
   font-size: 18px;
   font-family: Roboto, sans-serif;
   border: none;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 26px 26px 0;
   cursor: pointer;
   outline: none;
   background: #3d9c75;

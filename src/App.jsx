@@ -1,10 +1,9 @@
 
-import './App.css';
+import './App.css'
 //COMPONENTS
-import Logo from './components/Logo';
-// import Task from './components/Task';
-import Footer from './components/Footer';
-import TaskForm from './components/Form';
+import Logo from './components/Logo'
+import Footer from './components/Footer'
+import TasksList from './components/TasksList'
 
 function App() {
   return (
@@ -13,7 +12,7 @@ function App() {
       <div className="task-list-main">
         <h1>My Tasks</h1>
         {/* <Task text= "example task"/> */}
-        <TaskForm />
+        <TasksList />
       </div>
       <Footer />
     </div>
