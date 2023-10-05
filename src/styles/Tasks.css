@@ -1,14 +1,14 @@
 .task-container {
   width: 500px;
   min-height: 65px;
-  background-color: #1b1b32;
+  /* background-color: #1b1b32; */
   margin: 5px 0;
   padding: 8px 15px 8px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 26px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid #3d9c75;
   cursor: pointer;
   color: #f3f3f3;
 }
@@ -31,7 +31,22 @@
 
 /* task completed */
 
+
+/* tasks colors effect */
+
+.task-container:nth-child(3n + 1) {
+  background-color: #02897e;
+}
+
+.task-container:nth-child(3n + 2) {
+  background-color: #06ab9e;
+}
+
+.task-container:nth-child(3n + 3) {
+  background-color: #5baba5;
+}
+
 .task-container.completed {
-  background-color: #605f61;
+  background-color: #38383881;
   text-decoration: line-through;
 }

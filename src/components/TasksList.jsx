@@ -17,6 +17,21 @@ export default function TasksList() {
     }
   }
 
+  const completeTask = id => {
+    const updatedTasks = tasks.map(task => {
+      if (task.id === id) {
+        task.completed = !task.completed
+      }
+      return task
+    })
+    setTasks(updatedTasks)
+  }
+
+  const deleteTask = id => {
+    const updatedTasks = tasks.filter(task => task.id !== id)
+    setTasks(updatedTasks)
+  }
+
   return (
     <>
       <TaskForm onSubmit={addTask}/>
@@ -28,6 +43,8 @@ export default function TasksList() {
               id={task.id}            
               text={task.text}
               completed={task.completed}
+              completeTask={completeTask}
+              deleteTask={deleteTask}
             />
           )
         }
